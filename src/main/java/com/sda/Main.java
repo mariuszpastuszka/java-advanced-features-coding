@@ -23,5 +23,9 @@ public class Main {
         System.out.println("Let's play with records");
         PersonRecord record = new PersonRecord("Mariusz", "Pastuszka", 42);
         System.out.println("Record person: " + record);
+        System.out.println("Just name: " + record.name());
+        System.out.println("Just surname: " + record.surname());
+        System.out.println("Just age: " + record.age());
+        System.out.println("My new method in action: " + record.nameWithSurname());
     }
 }

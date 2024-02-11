@@ -3,7 +3,7 @@ package com.sda.model;
 import java.util.Objects;
 
 // immutable class - You cannot modify its state
-public class ImmutablePerson {
+public final class ImmutablePerson {
     private final String name;
 
     private final String surname;
