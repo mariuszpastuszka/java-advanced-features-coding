@@ -45,9 +45,11 @@ public class CalculatorExample {
             return a / b;
         };
         try {
-            calculatorOperations.div(5,0);
+            calculatorOperations1.div(5,0);
         } catch (WrongArgumentException e) {
             System.out.println("My fault :)");
         }
+
+
     }
 }
