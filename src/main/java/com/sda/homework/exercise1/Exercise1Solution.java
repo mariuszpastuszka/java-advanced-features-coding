@@ -1,6 +1,7 @@
 package com.sda.homework.exercise1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Exercise1Solution {
@@ -13,8 +14,9 @@ public class Exercise1Solution {
         addresses.add(new Address("Rzeszów", "Rejtana", "Poland", "17-123"));
         addresses.add(new Address("Kielce", "Warszawska", "Poland", "17-123"));
 
-        addresses.sort((o1, o2) -> o1.street().compareTo(o2.street()));
+//        addresses.sort((o1, o2) -> o1.street().compareTo(o2.street()));
 
+        Collections.sort(addresses);
         System.out.println(addresses);
     }
 }
