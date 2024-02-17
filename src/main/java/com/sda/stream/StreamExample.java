@@ -23,6 +23,8 @@ public class StreamExample {
         System.out.println("Adults: " + onlyAdults);
         System.out.println("Persons: " + persons);
 
+        System.out.println();
+        System.out.println("Play with kids filtering");
         var kids = persons.stream()
                 .filter(person -> {
                     System.out.println("Filtering person: " + person);
@@ -33,5 +35,24 @@ public class StreamExample {
                     return person.getName().startsWith("B");
                 })
                 .toList();
+
+        System.out.println();
+        // get names of only adults
+        var justNames = persons.stream()
+                .filter(person -> {
+                    System.out.println("Checking if person is adult..." + person);
+                    return person.getAge() >= 18;
+                })
+                .map(person -> {
+                    person.setAge(person.getAge() + 1);
+                    return person;
+                })
+                .map(person -> {
+                    System.out.println("Mapping person to name: " + person);
+                    return person.getName();
+                })
+                .toList();
+
+        System.out.println("Just names: " + justNames);
     }
 }
