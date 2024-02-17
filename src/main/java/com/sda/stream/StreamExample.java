@@ -10,10 +10,10 @@ public class StreamExample {
         System.out.println("Let's play with streams");
 
         var persons = new ArrayList<Person>();
+        persons.add(new Person("Erik", "Cantona", 8));
         persons.add(
                 new Person("John", "Doe", 21)
         );
-        persons.add(new Person("Erik", "Cantona", 8));
         persons.add(new Person("Mikolaj", "Kopernik", 55));
 
         // filter out kids
@@ -54,5 +54,7 @@ public class StreamExample {
                 .toList();
 
         System.out.println("Just names: " + justNames);
+
+
     }
 }
