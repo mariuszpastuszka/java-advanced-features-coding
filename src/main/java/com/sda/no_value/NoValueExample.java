@@ -12,6 +12,8 @@ public class NoValueExample {
     public static void main(String[] args) {
         System.out.println("Handling no values");
 //        String name = 1;
+        List<Person> somePersons = somePersons();
+        somePersons.add(new Person("M", "P", 40));
 
         for (Person p : somePersons()) {
             System.out.println("Person: " + p);
