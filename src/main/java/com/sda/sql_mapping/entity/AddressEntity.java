@@ -1,4 +1,4 @@
-package com.sda.sql_mapping;
+package com.sda.sql_mapping.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,16 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CarEntity {
+@Builder
+public class AddressEntity {
 
     private Long id;
 
-    private String brand;
+    private String city;
 
-    private String model;
+    private String street;
 
-    private String color;
+    private Long flatNumber;
+
+    private String zipCode;
 }

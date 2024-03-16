@@ -1,4 +1,4 @@
-package com.sda.sql_mapping;
+package com.sda.sql_mapping.entity;
 
 import java.util.List;
 import java.util.Objects;
